@@ -1,0 +1,135 @@
+body {
+  background-image: url('/static/img/image5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1 {
+  color: #00578e;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px #ddd;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  color: #00578e;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #ddd;
+}
+
+input[type=number] {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px #999;
+  font-size: 24px;
+}
+
+button[type=submit] {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00578e;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 1px 1px 1px #999;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type=submit]:hover {
+  background-color: #002f4e;
+}
+
+p {
+  color: #00578e;
+  font-size: 24px;
+  margin-top: 20px;
+  text-shadow: 1px 1px #ddd;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #f2f2f2;
+  color: #666;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+header {
+  background-color: #333;
+  height: 100px;
+  position: relative;
+}
+
+.header-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: slide-in 2s forwards;
+}
+
+.header-subtext {
+  font-size: 18px;
+  color: #fff;
+}
+
+@keyframes slide-in {
+  100% {
+    width: 100%;
+  }
+}
